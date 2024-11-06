@@ -1,25 +1,26 @@
 # luci-app-natmap
-TCP/UDP port mapping for full cone NAT
+全锥NAT的TCP/UDP端口映射
 
-> [NATMap][] project is used to establish a TCP/UDP port mapping from ISP NAT public address to local private address. If all layers of NAT are full cones (NAT-1), any host can access internal services through the mapped public address.
+> [NATMap][] 该项目用于建立从ISP NAT公共地址到本地私有地址的TCP/UDP端口映射。如果NAT的所有层都是全锥（NAT-1），则任何主机都可以通过映射的公共地址访问内部服务。
 
-## Features included outside of NATMap
-- [x] NAT Type Test
-- [x] Automatically configure the Firewall
-- [x] Transparent Port forward (Forward port = 0)
-- [x] Refresh the listen port of the BT Client (Forward port = 0)
-- [x] Port update notify script
-- [x] A Record update script
-- [x] AAAA Record update script
-- [x] SRV Record update script
-- [x] HTTPS Record update script
-- [ ] SVCB Record update script
+## NATMap之外的功能
+- [x] NAT类型测试
+- [x] 自动配置防火墙
+- [x] 透明端口转发（转发端口=0）
+- [x] 刷新BT客户端的侦听端口（转发端口=0）
+- [x] 端口更新通知脚本
+- [x] 记录更新脚本
+- [x] AAAA记录更新脚本
+- [x] SRV记录更新脚本
+- [x] HTTPS记录更新脚本
+- [ ] SVCB记录更新脚本
+- [ ] 整合部分[luci-app-natmap](https://github.com/blueberry-pie-11/luci-app-natmap)代码
 
-## Screenshots
+## 屏幕截图
 
 ![0](.img/0.png "0")  
 
-## Depends
+## 依赖
 
 1. [natmapt][]
 2. coreutils-timeout
